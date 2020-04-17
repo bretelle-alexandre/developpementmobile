@@ -23,6 +23,22 @@
   }
 }
 
+#formulaireLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+#goBack {
+  margin-bottom: 10vh;
+}
+
+ion-button {
+  width: 30vw;
+  align-self: center;
+  margin-top: 2vh;
+}
+
+
 /*ion-content {
   width: 400px;
 
