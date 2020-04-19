@@ -17,19 +17,19 @@
 - Ionic:
     - [Ionic UI Components](https://ionicframework.com/docs/components) :white_check_mark:
     - [Ionic Native](https://ionicframework.com/docs/native) *onglet Community* :white_check_mark:
-    - Camera Preview : :white_check_mark:
-    - Géolocation : :white_check_mark:
+    - Camera : :white_check_mark:
+    - Geolocation : :white_check_mark:
     - Android local Build :white_check_mark:
 
 #### Scripts pour build Android
 
-- Ajout de la plateforme Android `ionic cordova platform add android` (à ne faire qu'une fois en local)
-- Build `ionic cordova build android --prod --release`
-- MAJ des fichiers Angular dans le projet Android Studio `ionic cordova prepare android --prod --no-build`
-- Emule le projet sur un device `ionic cordova emulate android --prod`
+- Ajout de la plateforme Android : :white_check_mark:
+- Build : :white_check_mark:
+- MAJ des fichiers Angular dans le projet Android Studio : :white_check_mark:
+- Emule le projet sur un device : :white_check_mark:
 - Liste des prérequis pour Android `ionic cordova requirements android`
 
 #### Debug depuis l'AVD
 
-- Dans Google Chrome `chrome://inspect`
+- Dans Google Chrome : :white_check_mark:
 - Une catégorie *AOSP on IA Emulator* s'affiche, avec votre device et le bouton __inspect__
