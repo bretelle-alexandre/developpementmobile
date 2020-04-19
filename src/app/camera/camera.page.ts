@@ -7,17 +7,16 @@ import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, Camer
   templateUrl: './camera.page.html',
   styleUrls: ['./camera.page.scss'],
 })
-export class CameraPage implements OnInit {
+export class CameraPage {
 
   constructor(private cameraPreview: CameraPreview) { }
 
-  ngOnInit() {
-      // camera options (Size and location). In the following example, the preview uses the rear camera and display the preview in the back of the webview
-      const cameraPreviewOpts: CameraPreviewOptions = {
+  ionViewDidEnter() {
+        const cameraPreviewOpts: CameraPreviewOptions = {
         x: 0,
-        y: 0,
-        width: window.screen.width,
-        height: window.screen.height,
+        y: 100,
+        width: window.screen.width / 1.5,
+        height: window.screen.height / 1.5,
         camera: 'rear',
         tapPhoto: true,
         previewDrag: true,
@@ -32,7 +31,7 @@ export class CameraPage implements OnInit {
         },
         (err) => {
           console.log(err)
-        });
+        });        
   }
 
 
@@ -46,4 +45,10 @@ export class CameraPage implements OnInit {
   this.cameraPreview.switchCamera();
   }
 
+  // picture options
+  pictureOpts: CameraPreviewPictureOptions = {
+  width: 1280,
+  height: 1280,
+  quality: 85
+}
 }

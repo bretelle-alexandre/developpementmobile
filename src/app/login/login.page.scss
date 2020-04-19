@@ -33,11 +33,17 @@
 }
 
 ion-button {
-  width: 30vw;
   align-self: center;
   margin-top: 2vh;
 }
 
+.ion-actived {
+  margin-bottom: 10vh;
+}
+
+p {
+  margin-left: 10px;
+}
 
 /*ion-content {
   width: 400px;

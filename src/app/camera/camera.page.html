@@ -1,16 +1,21 @@
 <ion-header>
   <ion-toolbar>
-      <ion-button (click)="stopCamera()" class="ion-actived">
-          <ion-icon slot="start" name="notifation-outline"></ion-icon>
-          Retour Home
-      </ion-button>
-    <ion-title>camera</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-button (click)="stopCamera()" routerLink="/home" class="ion-actived">
+        <ion-icon name="home" slot="start"></ion-icon>
+        <p>Page d'accueil</p>
+    </ion-button> 
+ 
 
-<ion-content>
     <ion-button (click)="switchCamera()" class="ion-actived">
-        <ion-icon slot="start" name="notifation-outline"></ion-icon>
+        <ion-icon slot="start" name="camera"></ion-icon>
         Switch Camera
     </ion-button>
+  </ion-toolbar>
+
+    <ion-title>Camera Preview</ion-title>
+</ion-header>
+
+
+<ion-content>
+
 </ion-content>
